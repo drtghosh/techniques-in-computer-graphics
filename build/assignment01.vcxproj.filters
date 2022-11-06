@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\basic-techniques\assignment01\assignment.cc">
+      <Filter>assignment01</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\basic-techniques\assignment01\main.cc">
+      <Filter>assignment01</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\basic-techniques\common\common.cc">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\basic-techniques\assignment01\assignment.hh">
+      <Filter>assignment01</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\basic-techniques\common\common.hh">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\basic-techniques\common\constants.hh">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\basic-techniques\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="assignment01">
+      <UniqueIdentifier>{296E0BFA-703E-3D8F-8AEF-CA74AA41DA02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{4CA8BB0D-B499-3D8A-A26A-8225CBB5A8CE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
