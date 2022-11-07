@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\assignment02\assignment.cc">
+      <Filter>assignment02</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\assignment02\main.cc">
+      <Filter>assignment02</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\common\common.cc">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\assignment02\assignment.hh">
+      <Filter>assignment02</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\assignment02\main.hh">
+      <Filter>assignment02</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\common\common.hh">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\common\constants.hh">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="assignment02">
+      <UniqueIdentifier>{BB3E878E-1E67-347C-A731-0AA422EC4AAB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{95E8D85B-835C-30A6-87B4-86D214932A50}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

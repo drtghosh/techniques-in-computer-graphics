@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\extern\glad\core-3.3\src\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\extern\glad\core-3.3\include\glad\glad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\extern\glad\core-3.3\include\KHR\khrplatform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\extern\glad\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{12A3CEF6-444F-33DF-BB18-8A6BB8D593F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B4935116-FAB7-389E-A647-A32D2F0A2662}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

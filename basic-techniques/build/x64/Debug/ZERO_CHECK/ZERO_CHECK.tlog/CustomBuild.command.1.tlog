@@ -1,0 +1,10 @@
+^C:\USERS\DRTGHOSH\DOCUMENTS\ALL_OF_RWTH\SEMESTER1\COURSES\GRAPHICS\ASSIGNMENTS\TECHNIQUES-IN-COMPUTER-GRAPHICS\BASIC-TECHNIQUES\BUILD\CMAKEFILES\A879FBB8940A40BA6EC3D23784AF197D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques -BC:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/basic-techniques.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
