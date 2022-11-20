@@ -7,4 +7,7 @@
 #
 # If this file is malformatted, the assignment will not be graded at all.
 
-123456 John Doe
+378764 Tobias Broeckmann
+380434 Martin Gäbele
+412831 Frederik Muthers
+441275 Debabrata Ghosh

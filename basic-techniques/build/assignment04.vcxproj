@@ -22,11 +22,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{165C4BF0-F4CF-3AD6-81FC-2AD918D5D94E}</ProjectGuid>
+    <ProjectGuid>{4C995091-7A90-302A-945A-888BE4785107}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
-    <ProjectName>assignment01</ProjectName>
+    <ProjectName>assignment04</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -60,26 +60,26 @@
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\build\Debug\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assignment01.dir\Debug\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assignment01</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assignment04.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assignment04</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\build\Release\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assignment01.dir\Release\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assignment01</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assignment04.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assignment04</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\build\MinSizeRel\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">assignment01.dir\MinSizeRel\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">assignment01</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">assignment04.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">assignment04</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\build\RelWithDebInfo\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">assignment01.dir\RelWithDebInfo\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">assignment01</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">assignment04.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">assignment04</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
@@ -120,8 +120,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/Debug/assignment01.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/Debug/assignment01.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/Debug/assignment04.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/Debug/assignment04.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -164,8 +164,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/Release/assignment01.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/Release/assignment01.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/Release/assignment04.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/Release/assignment04.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -208,8 +208,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/MinSizeRel/assignment01.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/MinSizeRel/assignment01.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/MinSizeRel/assignment04.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/MinSizeRel/assignment04.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -251,8 +251,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/RelWithDebInfo/assignment01.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/RelWithDebInfo/assignment01.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/RelWithDebInfo/assignment04.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/RelWithDebInfo/assignment04.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -317,9 +317,12 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\assignment01\assignment.cc" />
-    <ClInclude Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\assignment01\assignment.hh" />
-    <ClCompile Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\assignment01\main.cc" />
+    <ClCompile Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\assignment04\assignment.cc" />
+    <ClInclude Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\assignment04\assignment.hh" />
+    <ClCompile Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\assignment04\main.cc" />
+    <ClInclude Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\assignment04\main.hh" />
+    <ClCompile Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\assignment04\sphere.cc" />
+    <ClInclude Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\assignment04\sphere.hh" />
     <ClCompile Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\common\common.cc" />
     <ClInclude Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\common\common.hh" />
     <ClInclude Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\common\constants.hh" />
