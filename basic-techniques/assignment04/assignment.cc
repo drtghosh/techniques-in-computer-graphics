@@ -194,6 +194,17 @@ glm::mat4 buildFrustum(float phiInDegree, float aspectRatio, float near, float f
     // buildFrustum function for programming exercise part b:
     // Add your code here:
     // ====================================================================
+    float top = near * tan((phiInDegree * M_PI / 180.0f) / 2.0f);
+    float bottom = -1.0f * top;
+    float right = aspectRatio * top;
+    float left = -1.0f * right;
+
+    fm[0][0] = 2.0f * near / (right - left);
+    fm[1][1] = 2.0f * near / (top - bottom);
+    fm[2][2] = -(far + near) / (far - near);
+    fm[3][3] = 0;
+    fm[2][3] = -1.0f;
+    fm[3][2] = -2.0f * far * near / (far - near);
 
     // ====================================================================
     // End Exercise code
@@ -208,8 +219,20 @@ glm::mat4 lookAt(const glm::vec3& camPos, const glm::vec3& viewDirection, const 
     // Lookat for programming exercise part a:
     // Add your code here:
     // ====================================================================
+    float norm_viewDirection = sqrt((viewDirection.x * viewDirection.x) + (viewDirection.y * viewDirection.y) + (viewDirection.z * viewDirection.z));
+    glm::vec3 normalized_viewDirection = glm::vec3(viewDirection.x / norm_viewDirection, viewDirection.y / norm_viewDirection, viewDirection.z / norm_viewDirection);
+    glm::vec3 rightVector = glm::vec3(viewDirection.y * up.z - viewDirection.z * up.y, viewDirection.z * up.x - viewDirection.x * up.z, viewDirection.x * up.y - viewDirection.y * up.x);
+    float norm_rightVector = sqrt((rightVector.x * rightVector.x) + (rightVector.y * rightVector.y) + (rightVector.z * rightVector.z));
+    glm::vec3 normalized_rightVector = glm::vec3(rightVector.x / norm_rightVector, rightVector.y / norm_rightVector, rightVector.z / norm_rightVector);
+    glm::vec3 modifiedUp = glm::vec3(rightVector.y * viewDirection.z - rightVector.z * viewDirection.y, rightVector.z * viewDirection.x - rightVector.x * viewDirection.z, rightVector.x * viewDirection.y - rightVector.y * viewDirection.x);
+    float norm_modifiedUp = sqrt((modifiedUp.x * modifiedUp.x) + (modifiedUp.y * modifiedUp.y) + (modifiedUp.z * modifiedUp.z));
+    glm::vec3 normalized_modifiedUp = glm::vec3(modifiedUp.x / norm_modifiedUp, modifiedUp.y / norm_modifiedUp, modifiedUp.z / norm_modifiedUp);
 
-    return glm::mat4(1.f);
+    float dot_rightCamera = normalized_rightVector.x * camPos.x + normalized_rightVector.y * camPos.y + normalized_rightVector.z * camPos.z;
+    float dot_upCamera = normalized_modifiedUp.x * camPos.x + normalized_modifiedUp.y * camPos.y + normalized_modifiedUp.z * camPos.z;
+    float dot_directionCamera = normalized_viewDirection.x * camPos.x + normalized_viewDirection.y * camPos.y + normalized_viewDirection.z * camPos.z;
+
+    return glm::mat4(normalized_rightVector.x, normalized_modifiedUp.x, -normalized_viewDirection.x, 0.0f, normalized_rightVector.y, normalized_modifiedUp.y, -normalized_viewDirection.y, 0.0f, normalized_rightVector.z, normalized_modifiedUp.z, -normalized_viewDirection.z, 0.0f, -dot_rightCamera, -dot_upCamera, dot_directionCamera, 1.0f);
 
     // ====================================================================
     // End Exercise code
@@ -227,6 +250,8 @@ void task::resizeCallback(int newWidth, int newHeight)
     // projection matrix setup for programming exercise part d:
     // Add your code here:
     // ====================================================================
+    float aspectRatio = (1.0f * newWidth) / newHeight;
+    glm::mat4 projectionMatrix = buildFrustum(90.0f, aspectRatio, 0.01f, 10.0f);
 
     // ====================================================================
     // End Exercise code
@@ -243,7 +268,7 @@ void task::drawScene(int scene, float runTime)
         // static camera for programming exercise part c:
         // Add your code here:
         // =====================================================
-
+        glm::mat4 viewMatrix = lookAt(glm::vec3(0.0f, -1.0f, 1.0f), glm::vec3(0.0f, 1.0f, -1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
 
         // =====================================================
         // End Exercise code
@@ -266,6 +291,10 @@ void task::drawScene(int scene, float runTime)
         // Add your code here:
         // =====================================================
 
+        glm::vec3 camera_position = glm::vec3(0.0f, 0.0f, height);
+        glm::vec3 view_direction = glm::vec3(-sin(angle1), cos(angle1), 0.0f);
+        glm::vec3 up_direction = glm::vec3(0.0f, 0.0f, 1.0f);
+        glm::mat4 viewMatrix = lookAt(camera_position, view_direction, up_direction);
 
         // =====================================================
         // End Exercise code
