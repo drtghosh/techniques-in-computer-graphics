@@ -296,10 +296,13 @@ void task::drawScene(int scene, float runTime)
         // Add your code here:
         // =====================================================
 
-        glm::vec3 camera_position = glm::vec3(-0.8f, 0.0f, 0.0f);
-        glm::vec3 view_direction = glm::vec3(-sin(angle1), cos(angle1), 0.0f);
-        glm::vec3 up_direction = glm::vec3(0.0f, 0.0f, 1.0f);
-        glm::mat4 viewMatrix = lookAt(camera_position, view_direction, up_direction);
+        //Taking the outer car as the camera holder
+        float outer_radius = 0.85f;
+        glm::vec3 cameraPosition_e = glm::vec3(outer_radius * cos(angle1), outer_radius * sin(angle1), height);
+        glm::vec3 radiusDirection = glm::vec3(0.0f, 0.0f, 0.0f) - cameraPosition_e;
+        glm::vec3 upDirection_e = glm::vec3(0.0f, 0.0f, 1.0f);
+        glm::vec3 cameraDirection_e = glm::vec3(cameraPosition_e.y * upDirection_e.z - cameraPosition_e.z * upDirection_e.y, cameraPosition_e.z * upDirection_e.x - cameraPosition_e.x * upDirection_e.z, cameraPosition_e.x * upDirection_e.y - cameraPosition_e.y * upDirection_e.x);
+        viewMatrix = lookAt(cameraPosition_e, cameraDirection_e, upDirection_e);
 
         // =====================================================
         // End Exercise code
