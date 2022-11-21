@@ -194,7 +194,7 @@ glm::mat4 buildFrustum(float phiInDegree, float aspectRatio, float near, float f
     // buildFrustum function for programming exercise part b:
     // Add your code here:
     // ====================================================================
-    float top = near * tan((M_PI / 180.0f) * (phiInDegree / 2.0f));
+    float top = near * std::tan((M_PI / 180.0f) * (phiInDegree / 2.0f));
     float bottom = -1.0f * top;
     float right = aspectRatio * top;
     float left = -1.0f * right;
@@ -298,10 +298,11 @@ void task::drawScene(int scene, float runTime)
 
         //Taking the outer car as the camera holder
         float outer_radius = 0.85f;
-        glm::vec3 cameraPosition_e = glm::vec3(outer_radius * cos(angle1), outer_radius * sin(angle1), height);
-        glm::vec3 radiusDirection = glm::vec3(0.0f, 0.0f, 0.0f) - cameraPosition_e;
+        glm::vec3 cameraPosition_e = glm::vec3(outer_radius * std::cos(angle1), outer_radius * std::sin(angle1), height);
+        //glm::vec3 radiusDirection = glm::vec3(0.0f, 0.0f, 0.0f) - cameraPosition_e;
         glm::vec3 upDirection_e = glm::vec3(0.0f, 0.0f, 1.0f);
         glm::vec3 cameraDirection_e = glm::vec3(cameraPosition_e.y * upDirection_e.z - cameraPosition_e.z * upDirection_e.y, cameraPosition_e.z * upDirection_e.x - cameraPosition_e.x * upDirection_e.z, cameraPosition_e.x * upDirection_e.y - cameraPosition_e.y * upDirection_e.x);
+        //glm::vec3 cameraDirection_e = glm::vec3(std::sin(angle1), -std::cos(angle1), -height);
         viewMatrix = lookAt(cameraPosition_e, cameraDirection_e, upDirection_e);
 
         // =====================================================
