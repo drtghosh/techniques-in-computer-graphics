@@ -43,8 +43,10 @@ float evaluateF(const glm::vec2& p1, const glm::vec2& p2, const glm::vec2& p)
     // Assignment section a
     // Add your code here:
     // ====================================================================
+    glm::vec2 line = p2 - p1;
+    glm::vec2 pointVec = p - p1;
 
-    return 0;
+    return (pointVec.x * line.x) + (pointVec.y * line.y);
 
     // ====================================================================
     // End Exercise code
@@ -78,7 +80,25 @@ void drawTriangle(const glm::vec4& p0_in, const glm::vec4& p1_in, const glm::vec
     // Assignment section b
     // Add your code here:
     // ====================================================================
+    minX = std::min(std::min(v0.x, v1.x), v2.x);
+    minX = std::floor(minX);
+    minX = std::max(minX, 0);
+    minX = static_cast<int>(minX);
 
+    minY = std::min(std::min(v0.y, v1.y), v2.y);
+    minY = std::floor(minY);
+    minY = std::max(minY, 0);
+    minY = static_cast<int>(minY);
+
+    maxX = std::max(std::max(v0.x, v1.x), v2.x);
+    maxX = std::ceil(maxX);
+    maxX = std::min(maxX, windowWidth);
+    maxX = static_cast<int>(maxX);
+
+    maxY = std::max(std::max(v0.y, v1.y), v2.y);
+    maxY = std::ceil(maxY);
+    maxY = std::min(maxY, windowHeight);
+    maxY = static_cast<int>(maxY);
     // ====================================================================
     // End Exercise code
     // ====================================================================
@@ -89,7 +109,12 @@ void drawTriangle(const glm::vec4& p0_in, const glm::vec4& p1_in, const glm::vec
     // Assignment section f
     // Add your code here:
     // ====================================================================
-
+    glm::vec3 negViewDir = glm::vec3(0, 0, 1);
+    float potentialDiffuse = (normal.x * negViewDir.x) + (normal.y * negViewDir.y) + (normal.z * negViewDir.z);
+    if (potentialDiffuse <= 0)
+        return;
+    else
+        diffuse = potentialDiffuse;
     // ====================================================================
     // End Exercise code
     // ====================================================================
@@ -106,10 +131,15 @@ void drawTriangle(const glm::vec4& p0_in, const glm::vec4& p1_in, const glm::vec
             // Assignment section c
             // Add your code here:
             // ====================================================================
+            bool toDraw = true;
+            float firstSign = (evaluateF(v0, v1, p) >= 0.0f);
+            float secondSign = (evaluateF(v1, v2, p) >= 0.0f);
+            float thirdSign = (evaluateF(v2, v0, p) >= 0.0f);
 
             // Use this function to draw the pixel
             // Do not modify it, just call it if you want to draw the pixel given by p
-            setPixel(p[0], p[1], diffuse * color);
+            if (firstSign && secondSign && thirdSign)
+                setPixel(p[0], p[1], diffuse * color);
 
             // ====================================================================
             // End Exercise code
@@ -142,7 +172,14 @@ void task::drawScene(int _scene, float _runTime)
     // Assignment section e
     // Add your code here:
     // ====================================================================
-
+    glm::vec2 p;
+    for (p[1] = 0; p[1] < windowHeight; p[1]++)
+    {
+        for (p[0] = 0; p[0] < windowWidth; p[0]++)
+        {
+            setPixel(p[0], p[1], glm::vec3(0, 0, 0));
+        }
+    }
     // ====================================================================
     // End Exercise code
     // ====================================================================
@@ -169,7 +206,9 @@ void task::drawScene(int _scene, float _runTime)
         // Assignment section d
         // Add your code here:
         // ====================================================================
-
+        float rotationAngle = M_PI * _runTime / 15.0f;
+        glm::mat4 rotationMatrixy = glm::mat4(std::cos(rotationAngle), 0.0f, -std::sin(rotationAngle), 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, std::sin(rotationAngle), 0.0f, std::cos(rotationAngle), 0.0f, 0.0, 0.0f, 0.0f, 1.0f);
+        modelViewMatrix = modelViewMatrix * rotationMatrixy;
         // ====================================================================
         // End Exercise code
         // ====================================================================
