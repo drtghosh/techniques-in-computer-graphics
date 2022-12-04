@@ -71,18 +71,18 @@ void triangulate(const std::vector<glm::vec2>& vertices, std::vector<int>& trian
     // True iff the vertex has been clipped.
     std::vector<bool> clipped(n, false);
 
-    int whileC = 0;
-    //count(clipped.begin(), clipped.end(), false) > 2
     while (count(clipped.begin(), clipped.end(), false) > 2) {
-        whileC++;
-        //std::cout << whileC << "-th while loop!" << std::endl;
+        //loop through all the vertices
         for (int i = 0; i < vertices.size(); i++) {
+            //ignore if already clipped
             if (clipped[i])
-                //std::cout << i << " clipped." << std::endl;
                 continue;
 
+            //initialize previous and next vertices for current vertex
             int i_prev = (i - 1 + vertices.size()) % vertices.size();
             int i_next = (i + 1 + vertices.size()) % vertices.size();
+
+            //update previous and next vertices for current vertex ignoring the clipped ones
             for (int j = 1; j < vertices.size(); j++) {
                 int potential_prev = (i - j + vertices.size()) % vertices.size();
                 if (!clipped[potential_prev]) {
@@ -97,13 +97,12 @@ void triangulate(const std::vector<glm::vec2>& vertices, std::vector<int>& trian
                     break;
                 }
             }
-            //int i_prev = (i - 1 + vertices.size()) % vertices.size();
-            //int i_next = (i + 1 + vertices.size()) % vertices.size();
-            std::cout << i_prev << " and " << i << " and " << i_next << std::endl;
+            
+            //check conditions to clip away ears
+            //std::cout << i_prev << " and " << i << " and " << i_next << std::endl;
             if (convex(vertices[i_prev], vertices[i], vertices[i_next])) {
                 if (triangleEmpty(i_prev, i, i_next, vertices)) {
-                    std::cout << whileC << "-th while loop!" << std::endl;
-                    std::cout << "clipped " << i << " with " << i_prev << i_next << std::endl;
+                    //std::cout << "clipped " << i << " with " << i_prev << i_next << std::endl;
                     clipped[i] = true;
                     triangles.push_back(i_prev);
                     triangles.push_back(i);
