@@ -2,6 +2,7 @@ C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/t
 C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/CMakeFiles/assignment02.dir
 C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/CMakeFiles/assignment04.dir
 C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/CMakeFiles/assignment05.dir
+C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/CMakeFiles/assignment06.dir
 C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/CMakeFiles/ALL_BUILD.dir
 C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/CMakeFiles/ZERO_CHECK.dir
 C:/Users/drtghosh/Documents/All_of_RWTH/Semester1/Courses/Graphics/Assignments/techniques-in-computer-graphics/basic-techniques/build/extern/glfw/CMakeFiles/ALL_BUILD.dir

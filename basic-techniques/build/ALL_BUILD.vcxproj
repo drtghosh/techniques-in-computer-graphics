@@ -186,6 +186,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{0214EB51-09C8-3B48-B7D0-1926FBE1C633}</Project>
       <Name>assignment05</Name>
     </ProjectReference>
+    <ProjectReference Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\build\assignment06.vcxproj">
+      <Project>{2E171C9C-F909-3748-9062-7A6D10AE6400}</Project>
+      <Name>assignment06</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\Users\drtghosh\Documents\All_of_RWTH\Semester1\Courses\Graphics\Assignments\techniques-in-computer-graphics\basic-techniques\build\extern\glad\glad.vcxproj">
       <Project>{4539F6C4-4E09-320F-8B21-E496F32B2E7B}</Project>
       <Name>glad</Name>
