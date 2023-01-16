@@ -70,6 +70,9 @@ void main() {
    // Create your own temporary variables here if you need to.
    // =======================================================================
    // =======================================================================
+   vec3 shiftedReflectionVector = reflectionVector;
+   shiftedReflectionVector.z = shiftedReflectionVector.z + 1;
+   shiftedReflectionVector = normalize(shiftedReflectionVector);
 
    // Environment Map:
    if (uUseCubeMapping) {
@@ -78,6 +81,8 @@ void main() {
    } else {
      // Implement sphere mapping here by computing vec2 sphereCoord
      vec2 sphereCoord = vec2(0,0);
+     sphereCoord.x = 0.5f * (shiftedReflectionVector.x + 1.0f);
+     sphereCoord.y = 0.5f * (shiftedReflectionVector.y + 1.0f);
      reflectionColor = vec3(texture(uTextureSphereMap, sphereCoord));
    }
 
@@ -86,7 +91,7 @@ void main() {
      oFragColor = vec4(fragColor, 1.0f);
    } else {
      // Part b: implement blending here
-     vec3 fragColor = lighingTerm; //Replace this line
+     vec3 fragColor = lighingTerm + 0.1 * reflectionColor; //Replace this line
      oFragColor = vec4(fragColor, 1.0f);
    }
 
